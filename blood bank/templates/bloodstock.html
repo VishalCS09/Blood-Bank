@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../static/css/login.css">    
+</head>
+<body>
+  <nav>
+		<div class="logo">
+			<h1 >Blood</h1>
+		</div>
+		<div class="menu">
+			<a href="bloodstock"><h1>Stock</h1></a>
+      <a href="Donate"><h1>Donate</h1></a>
+      <a href="donorinfo"><h1>Donor INFO</h1></a>
+      <a href="modify"><h1>Modify</h1></a>
+      <a href="/logout"><h1>Logout</h1></a>
+		</div>
+	</nav>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active">Stock </h2>
+   
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h1>BLOOD</h1>
+    </div>
+
+
+    <!-- Login Form -->
+    <form action="/bloodstock" method="post">
+      <input type="text" id="username" class="fadeIn second" name="username" placeholder="Name">
+       <input type="text" id="email" class="fadeIn third" name="email" placeholder="Email">
+      <input type="text" id="bloodtype" class="fadeIn third" name="bloodtype" placeholder="Blood type">
+      <input type="submit" class="fadeIn fourth" value="Search">
+    </form>
+<div class="msg">{{ msg }}</div>
+   <!-- Remind Passowrd -->
+   <br>
+   <br>
+
+  </div>
+</div>
+</body>
+</html>
